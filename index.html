@@ -7,32 +7,44 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Dad Joke Generator</h1>
-      <div>Get the best dad jokes in seconds</div>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Dad Joke Generator</h1>
+        <h2>Get the best dad jokes in seconds</h2>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter what topic the dad joke should be about"
-          required
-          autocomplete="off"
-          autofocus
-        />
-        <input type="submit" value="Search" />
-      </form>
-      <div class="joke">Here is the joke</div>
-    </main>
+      <main>
+        <div class="joke-container">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter what topic the dad joke should be about"
+              required
+              autocomplete="off"
+              autofocus
+              class="joke-prompt"
+            />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+          <div class="example">i.e. cats, snow, plants</div>
+        </div>
+        <div class="joke">Here is the joke</div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/ashenfield98" target="_blank"
-        >Ashley Enfield</a
-      >, open-sourced <a href="" target="_blank">on Github</a> and hosted
-      <a href="" target="_blank">on Netlify</a>.
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/ashenfield98" target="_blank"
+          >Ashley Enfield</a
+        >, open-sourced
+        <a href="https://github.com/ashenfield98/my-ai-project" target="_blank"
+          >on Github</a
+        >
+        and hosted
+        <a href="https://ai-dadjoke-generator.netlify.app/" target="_blank"
+          >on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
