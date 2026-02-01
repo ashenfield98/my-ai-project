@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Dad Joke Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -15,7 +17,7 @@
 
       <main>
         <div class="joke-container">
-          <form>
+          <form id="joke-generator">
             <input
               type="text"
               placeholder="Enter what topic the dad joke should be about"
@@ -23,12 +25,13 @@
               autocomplete="off"
               autofocus
               class="joke-prompt"
+              id="joke-prompt"
             />
             <input type="submit" value="Search" class="search-button" />
           </form>
           <div class="example">i.e. cats, snow, plants</div>
         </div>
-        <div class="joke">Here is the joke</div>
+        <div class="joke hidden" id="joke-result"></div>
       </main>
 
       <footer>
